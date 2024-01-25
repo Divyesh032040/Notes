@@ -1,0 +1,59 @@
+-> tailwind commands 
+
+Tailwind CSS provides a wide range of utility classes that you can use to style your HTML elements without having to write custom CSS. Here are some important and commonly used classes and commands in Tailwind CSS:
+
+    Spacing Utilities:
+        m-{size}: Margin utilities.
+        p-{size}: Padding utilities.
+        mx-{size}: Horizontal margin.
+        my-{size}: Vertical margin.
+        px-{size}: Horizontal padding.
+        py-{size}: Vertical padding.
+
+    Width and Height Utilities:
+        w-{size}: Width utilities.
+        h-{size}: Height utilities.
+        max-w-{size}: Maximum width.
+        max-h-{size}: Maximum height.
+        min-w-{size}: Minimum width.
+        min-h-{size}: Minimum height.
+
+    Text Utilities:
+        text-{size}: Font size.
+        text-{color}: Text color.
+        font-{family}: Font family.
+        font-{weight}: Font weight.
+        leading-{size}: Line height.
+        tracking-{size}: Letter spacing.
+
+    Background and Border Utilities:
+        bg-{color}: Background color.
+        border-{size}: Border width.
+        border-{color}: Border color.
+        rounded-{size}: Border radius.
+
+    Flexbox Utilities:
+        flex: Display as flex container.
+        flex-{direction}: Flex container direction.
+        justify-{content}: Justify content.
+        items-{align}: Align items.
+        self-{align}: Align self.
+
+    Grid Utilities:
+        grid: Display as grid container.
+        col-span-{num}: Column span in a grid.
+        row-span-{num}: Row span in a grid.
+
+    Responsive and Hover Variants:
+        sm:, md:, lg:, xl:: Responsive prefixes.
+        hover:: Hover state variants.
+
+    Visibility Utilities:
+        hidden: Hide an element.
+        invisible: Make an element invisible but still take up space.
+
+    Transition Utilities:
+        transition-{property}: Apply transitions.
+
+    Utility for Display Property:
+        hidden, block, inline, inline-block, flex, inline-flex, table, inline-table, table-caption, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, table-row.

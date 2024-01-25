@@ -1,0 +1,10 @@
+topic : tailwind css 
+
+-> instalation 
+
+npm init -> The npm init command is used in Node.js projects to initialize a new package.json file. The package.json file contains metadata about the project, such as its name, version, entry point, dependencies, and various other configuration settings.
+
+step 1 : create 2 folder : dist and src - in dist we create a index.html where we write a code for production and in src we create a css sourse file 
+
+stp 2 : run command "npx tailwindcss init" for grenrate 
+
