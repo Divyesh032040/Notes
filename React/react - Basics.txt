@@ -1,0 +1,66 @@
+react Basics 
+
+-> Virtual DOM : Virtual DOM ek lightweight copy hota hai actual DOM ka. Jab koi change hota hai UI mein, React sabse pehle virtual DOM mein update karta hai. Phir, React virtual DOM ko actual DOM se compare karta hai aur sirf woh parts update karta hai jo change hue hain, isse pura DOM dubara se render karne ki zarurat nahi hoti. Is tareeke se, React performance improve karta hai aur UI updates ko efficient banata hai.
+
+->  very very less page reload.
+-> extremly use of reusable component.
+-> what ? --> react is a java script Library to maintain frontend use to build complex userInterface in easy , fast and efficient way. 
+-> why react ? --> efficieant and lightweight.
+-> how to use ? --> create a component and make data if you needed , link the data and change the data when we need and react will react when data will change. 
+when to use ? --> when we want to build big and complex component. 
+
+
+------- component ---------
+-> component ek function he , jo ki return karega JSX. 
+------- JSX -------
+-> JSX : jsx ek html ki tarah dkhne wala syntax he lekin uskje pass kuch additional super powers he. -> JSX is a syntax extension for JavaScript that looks similar to XML or HTML. , example : const element = <h1>Hello, Divyesh!</h1>;
+-> It allows you to write UI components in a declarative manner, making it easier to visualize the structure of your UI.
+-> JSX is commonly used with React to describe how the UI should look, and it gets compiled into regular JavaScript for the browser to understand.
+--------- work flow basic ---------
+-> App.jxs me jo ham app function ke andar html code return karte he vo pura <div>......</div> ya phir <>....</> me hi hona chahiye because ham ek hi chise return klar sakte he isliye. 
+-> App.jsx me jo App component he uska name first letter capital  se hi start hona chahiye aur sare html tag ke name small letter se. 
+-> ham jo App.jsx m component banate he vo export karna bhi zaruri he taki ham usse main.jsx me import kar sake. kuch is taah : export default App
+->phir vo App.jsx , jo function he jo ki terun kar raha he html , jo ki component ki ui define kar rahi he vo sara jayega ek div me jiski id he root and jo ki hoga hamare index.html me. kuch is tarah : 
+
+import React from 'react'
+import ReactDOM from 'react-dom/
+import App from './App.jsx'
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+
+-----------   styling   ----------
+
+3 ways -> Module css , tailwind css , material UI
+
+-> use tailwind css -> go to website -> go to framwork section -> go fow vite -> follow instruction from installation 
+
+----------new components ----------
+-> src me new files banao .jsx ke sath and vaha pe boiler code generate karo and vahi hamara new cmponent he , usko main.jsx me imprt karo and rander karao
+
+
+---------- state data -----------
+-> we not how data on website by write <h1>12</h1> in jsx file but we do like this ,
+   let num = 12 ;
+   <h1>{num}</h1>  
+-> her num is called state and when we want to change data , we change state. 
+-> " react will react when state will change. "
+
+----------------useState( )  -------------
+
+-> let [ Num , setNum ] = useState( 56 )     : her Num represent 56 and using setNum we can change/manuplate that Num.
+-> we write that num in jsx like that : <h1> {Num} </h1> so that we can access that value and manuplate using useState like that ,
+    when button press , Num will increse by 1 :      <button onClick={function () {setNum(Num + 1 ) } } >button</button> 
+
+
+                                                                                              
+                                                                                        
+
+
+
+
+
+
