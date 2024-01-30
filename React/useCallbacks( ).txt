@@ -1,0 +1,15 @@
+useCallbacks( )
+syntax :     const cachedFn =  useCallback  (  fn  , dependencies  )
+
+useCallback is a React Hook that lets you cache a function definition between re-renders.
+
+ "useCallback is a React Hook that lets you cache a function definition between re-renders" means that it's a tool provided by React to help you optimize the performance of your functional components by keeping a specific function constant (cached) unless its dependencies change, reducing unnecessary work during component re-renders.
+
+explaiination :
+Yes, you're absolutely right! Here's a concise summary:
+
+    useCallback memoizes a function.
+    The memoized function is recreated only when one of its dependencies changes.
+    If the dependencies remain the same between renders, React reuses the previously memoized function, avoiding unnecessary recreation.
+
+So, by specifying the dependencies in the dependency array, you control when the function should be recreated. If any of those dependencies change, the function is recreated; otherwise, React uses the memoized version. This helps in optimizing performance by preventing unnecessary renders and work.

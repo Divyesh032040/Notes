@@ -1,0 +1,10 @@
+useRef()
+
+use : DOM manuplation 
+
+const refElement = useRef ();
+
+console.log(refElement) gives  object of current element of DOM which we want to manuplate.
+
+
+

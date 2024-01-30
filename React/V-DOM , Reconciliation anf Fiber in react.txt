@@ -1,0 +1,53 @@
+
+
+----------- What is reconciliation?  ----------
+
+-> The algorithm React uses to difffrentiate one tree (virtual DOM) with another ( Browser DOM ) to determine which parts need to be changed.
+
+-> Reconciliation is the algorithm behind virtual DOM.
+
+- A high-level description goes something like this:   
+
+-> when you render a React application, a tree of nodes that describes the app is generated and saved in memory. 
+->This tree is then flushed to the rendering environment — for example, in the case of a browser application, it's translated to a set of DOM operations.
+-> When the app is updated (usually via setState), a new tree is generated. 
+->The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.
+
+
+-> 2 important points :
+--> 1) Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.
+--> 2) Diffing ( determining the differences between the previous state of the virtual DOM tree and the new state ) of lists is performed using keys. Keys should be "stable, predictable, and unique. 
+
+
+
+-----------  React Fiber  -------------
+React Fiber is an ongoing reimplementation of React's core algorithm.
+
+->  The goal of React Fiber is to increase its suitability for areas like animation, layout, and gestures. 
+
+->  Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+
+-> We've established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to
+
+    pause work and come back to it later.
+    assign priority to different types of work.
+    reuse previously completed work.
+    abort work if it's no longer needed
+
+In summary:
+
+  -> React Fiber is responsible for optimizing the rendering process, making it more incremental and efficient, and enabling features like work scheduling and prioritization.
+
+ ->   Reconciliation is the process of comparing the previous and current states of the Virtual DOM to determine what updates are needed in the actual DOM.
+
+->   The Virtual DOM is an abstraction that helps React optimize rendering by working with an in-memory representation of the DOM, allowing for efficient updates and minimizing the impact on the actual DOM.
+
+
+
+
+
+
+
+
+
+
